@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # This script waits for a docker `$service` to become "healthy"
 # by checking the `.State.Health.Status` info of the `docker inspect` command.

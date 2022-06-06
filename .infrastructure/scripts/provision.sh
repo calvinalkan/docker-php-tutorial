@@ -5,7 +5,10 @@ sudo apt-get update -yq && sudo apt-get install -yq \
      ca-certificates \
      curl \
      gnupg \
-     lsb-release
+     lsb-release \
+     # make and bash are required to run out docker compose setup
+     make \
+     bash
 
 # add Docker’s official GPG key
 curl -fsSL https://download.docker.com/linux/debian/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
